@@ -447,3 +447,89 @@ button {
 .next-btn {
   cursor: pointer;
 }
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Alinhamento na horizontal topo e baixo */
+  align-items: center; /* Alinhamento na vertical esquerda e direita*/
+  height: 100rem;
+}
+
+#contato .container {
+  background-color: var(--Bfume);
+  width: 40%;
+  height: 50rem;
+  padding: 10em;
+  border-radius: 1.2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#contato input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  padding: auto 0;
+}
+#contato label {
+  font-size: 2.2rem;
+  color: var(--tertiary-color);
+}
+
+#contato select {
+  padding: 12px;
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0.5em;
+  font-size: 2rem;
+
+  color: var(--primary-color);
+  border-radius: 0 1rem;
+  background-color: var(--tertiary-color);
+}
+
+#contato input[type="number"],
+#contato input[type="text"],
+#contato input[type="email"] {
+
+  padding: 12px;
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 2rem;
+  margin: 0.5em;
+
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  border-radius: 0 1rem;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#contato textarea {
+  text-align: center;
+  resize: vertical; 
+  width: 50%;
+  margin: 0.5em;
+  font-size: 2.5rem;
+
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  border-radius: 0 1rem;
+}
+
+#contato button[type="submit"]:hover {
+  background-color: red;
+}
+
+#contato button[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 22px 30px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
